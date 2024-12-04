@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fansite - Page d'Accueil</title>
+    <link rel="stylesheet" href="/styleprojet.css">
+</head>
+
+<body>
+    <header class="anime-header">
+        <div class="logo">
+            <h1>Fansite</h1>
+            <p>Explorez les mondes de vos héros préférés</p>
+        </div>
+        <!-- Hamburger Button -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="yami/yami.html" class="nav-link">Yami</a></li>
+                <li><a href="usopp/usopp.html" class="nav-link">Usopp</a></li>
+                <li><a href="guts/guts.html" class="nav-link">Guts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenue dans l'univers de vos célébrités préférées</h2>
+            <p>Plongez dans leurs histoires, leurs réalisations, et leurs actualités.</p>
+        </section>
+
+        <section class="celebrities">
+            <article class="anime-card">
+                <h3>Yami Sukehiro</h3>
+                <img src="images/yami.jpg" alt="Yami Sukehiro">
+                <p>Capitaine des Taureaux Noirs de *Black Clover*, Yami est connu pour sa magie des ténèbres et son charisme unique.</p>
+                <a href="yami/yami.html" class="btn anime-btn">Découvrir</a>
+            </article>
+            <article class="anime-card">
+                <h3>Usopp</h3>
+                <img src="images/usopp.jpg" alt="Usopp">
+                <p>Le sniper du célèbre équipage des Mugiwara, Usopp est connu pour son courage et son humour dans *One Piece*.</p>
+                <a href="usopp/usopp.html" class="btn anime-btn">Découvrir</a>
+            </article>
+            <article class="anime-card">
+                <h3>Guts</h3>
+                <img src="images/guts.jpg" alt="Guts">
+                <p>Un récit sombre et épique, Berserk raconte l'histoire de Guts, un mercenaire légendaire dans un monde fantastique brutal.</p>
+                <a href="guts/guts.html" class="btn anime-btn">Découvrir</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="anime-footer">
+        <p>© 2024 Fansite. Créé par un étudiant de la plateforme.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
